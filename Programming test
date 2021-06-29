@@ -1,0 +1,48 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+         //creating new string arrays
+        String[] word=new String[10];
+        String[] change=new String[10];
+        Scanner sc =new Scanner(System.in);
+        //getting input
+        for(int i=0;i<=10;i++)
+        {
+            word[i]=sc.nextInt();
+        }
+        //getting the length of the array
+        int num=word[].len;
+        if(num%2!=0)
+        {
+            num1=num/2;
+            num2=num1+1;
+        //creating a new array starting from mid value
+            for(int k=num2;k<word;k++)
+            {
+                change[k-num2]=word[k];
+            }
+            for(int u=0;u<num2;u++)
+            {
+                change[u+num1]=word[u];
+            }
+            //printing the output
+            for(int y=0;y<word;y++)
+            {
+         for(int p=1;p<=word;p++)
+         {
+             if(p!=word){
+                 System.out.print(" ");
+                 
+             }
+             else
+             {
+                System.out.println(change[p-word]) ;
+             }
+             System.out.println("/n");
+         }
+        }
+        }
+        
+     }
+}
